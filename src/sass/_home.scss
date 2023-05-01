@@ -1,0 +1,21 @@
+.home_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // mobile screen
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    align-items: normal;
+  }
+}

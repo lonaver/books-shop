@@ -1,0 +1,336 @@
+.shopping_section {
+  display: flex;
+  gap: 40px;
+  //outline: 2px solid red;
+}
+.section_shop_list {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin-top: 40px;
+  width: 100%;
+  //max-width: 480px;
+
+  @media screen and (min-width: 480px) {
+    //max-width: 768;
+    width: 100%;
+    gap: 140px;
+  }
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    max-width: 1140px;
+  }
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+  }
+
+  //outline: 2px solid rgb(204, 255, 0);
+}
+.wrap_title {
+  display: flex;
+  height: 52px;
+}
+
+.empty_shop_list {
+  //  margin-left: auto;
+  //margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    //width: 265px;
+    // margin-left: 55px;
+    // margin-right: 55px;
+  }
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    width: 332px;
+    margin-left: 210px;
+    margin-right: 180px;
+  }
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    // margin-left: 355px;
+    // margin-right: 306px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 349px;
+  }
+}
+.empty_text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  /* or 133% */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 244px;
+  }
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    width: 349px;
+  }
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    width: 349px;
+  }
+}
+
+.empty_thumb_img {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 480px) {
+    height: 198px;
+    width: 265px;
+  }
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    height: 241px;
+    width: 332px;
+  }
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    width: 322px;
+    height: 241px;
+  }
+}
+// cards list
+.container_wrap {
+  display: none;
+
+  @media screen and (min-width: 480px) {
+    height: 362px;
+    gap: 24px;
+  }
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    border: 2px solid var(--color-border-light);
+    border-radius: 16px;
+    padding: 20px 20px;
+    padding: 30px 24px;
+
+    width: 704px;
+    height: 213px;
+    gap: 24px;
+  }
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    padding: 30px 24px;
+    gap: 48px;
+
+    width: 996px;
+    height: 213px;
+  }
+}
+
+.container_wrap_mobile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  border: 2px solid var(--color-border-light);
+  border-radius: 16px;
+  padding: 20px 20px;
+  padding: 30px 24px;
+
+  @media screen and (min-width: 480px) {
+  }
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.container_wrap_light {
+  background: var(--color-bcg-theme-light);
+  color: var(--color-title-ligth);
+}
+.container_wrap_dark {
+  background: var(--color-header-theme-dark);
+  color: var(--color-title-dark);
+}
+
+.thumb_cardbook_img {
+  display: flex;
+  padding: 0;
+  //width: 116px;
+  height: 165px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  // outline: 2px solid tomato;
+}
+// .cardbook_img_book {
+//   outline: 2px solid tomato;
+// }
+
+.list_books {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.shop_cardbook_book_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shop_text_aboutbook {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  /* or 129% */
+
+  letter-spacing: -0.04em;
+}
+.cardbook_title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(18 / 16);
+  /* identical to box height, or 112% */
+
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+.cardbook_subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  /* identical to box height, or 117% */
+
+  letter-spacing: 0.03em;
+  margin-bottom: 14px;
+}
+
+.cardbook_author {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  /* identical to box height, or 117% */
+
+  letter-spacing: -0.04em;
+}
+.text_subtitle_light {
+  color: var(--color-subtitle-ligth);
+}
+.bottom_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // outline: 2px solid red;
+}
+.cardbook_thumb_icons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.tui-pagination {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.btn_pagination {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn_pagination:disabled {
+  cursor: auto;
+}
+.number_page {
+  font-size: 2.5rem;
+  color: var(--color-border-light);
+}
+
+.btn_dump {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.icon_dump {
+  width: 18px;
+  height: 18px;
+  //stroke: var(--color-title-ligth);
+
+  // transition: fill var(--speed-link) var(--cubick-link);
+}
+
+//for mobile
+.thumb_up_mobile {
+  display: flex;
+  gap: 20px;
+}
+.cardbook_left_mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.top_wrap_mobile {
+  display: flex;
+  flex-direction: column;
+}
+.cardbook_thumb_icons_mobile {
+  display: flex;
+  gap: 14px;
+}
+
+.thumb_cardbook_img_mobile {
+  display: flex;
+  padding: 0;
+  width: 98px;
+  height: 139px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  // outline: 2px solid tomato;
+}
+.btn_dump_mobile {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}

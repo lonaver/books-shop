@@ -1,0 +1,210 @@
+.all_books {
+  max-width: 335px;
+  padding: 0;
+
+  margin-top: 40px;
+  // mobile screen
+  @media screen and (min-width: 480px) {
+    width: 335px;
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    max-width: 1054px;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    width: 1054px;
+    margin-left: 40px;
+  }
+
+  //outline: 2px solid red;
+}
+
+.js_all_categories {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 40px;
+  // outline: 2px solid rgb(13, 0, 255);
+}
+
+.js_one_category {
+  display: flex;
+  flex-wrap: wrap;
+  //flex-basis: calc((996 - 24 * (5 - 1)) / 5);
+  gap: 24px;
+  // outline: 2px solid rgb(0, 255, 17);
+}
+
+.books_subtitle {
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.books_list_one {
+  //flex-basis: calc((996 - 24 * (5 - 1)) / 5);
+  max-height: 535px;
+  overflow: hidden;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 535px;
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    height: 306px;
+    max-height: 306px;
+    overflow: hidden;
+    gap: 25px;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 24px;
+  }
+
+  // outline: 2px solid rgb(255, 225, 0);
+}
+
+.card_book {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  @media screen and (min-width: 480px) {
+    // height: 408px;
+    //width: 335px;
+    height: 535px;
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    width: 218px;
+    height: 100%;
+    // overflow: auto;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    width: 180px;
+  }
+}
+
+.book_title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 14px;
+}
+
+.author_book {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(18 / 16);
+  /* identical to box height, or 112% */
+
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+.author_book_light {
+  color: var(--color-title-ligth);
+}
+.author_book_dark {
+  color: var(--color-title-dark);
+}
+.subtitle_book {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  /* identical to box height, or 117% */
+
+  letter-spacing: -0.04em;
+  text-transform: none;
+  color: var(--color-subtitle-ligth);
+}
+.thumb_book {
+  display: flex;
+  justify-content: space-around;
+  // width: 180px;
+  border-radius: 8px;
+  border-color: transparent;
+  //background-size: content;
+  height: 485px;
+  //width: 335px;
+
+  margin: 0;
+  overflow: hidden;
+  @media screen and (min-width: 480px) {
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    height: 316px;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    height: 256px;
+    width: 180px;
+  }
+}
+.thumb_book img {
+  border-radius: 8px;
+}
+.btn_more {
+  margin-right: 16px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  /* identical to box height, or 129% */
+
+  letter-spacing: -0.01em;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  //padding-left: 28px;
+  margin-left: auto;
+  width: 124px;
+  height: 46px;
+  background-color: transparent;
+}
+// scroll up
+.scroll_up {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+.img_scroll_up {
+  display: block;
+  width: 64px;
+  height: 64px;
+  .scroll_up:hover & {
+    filter: brightness(0.8); /* Add a dark-grey background on hover */
+  }
+}

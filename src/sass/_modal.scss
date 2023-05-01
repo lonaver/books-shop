@@ -1,0 +1,231 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 1000ms var(--cubick-link);
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.is-hidden .modal {
+    transform: rotateY(20deg) rotateX(35deg) translate(-50px, -50px)
+      skew(-35deg, 10deg);
+    opacity: 0;
+  }
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+
+  padding: 40px;
+  position: absolute;
+  border-radius: 4px;
+  top: 0%;
+  left: 0%;
+  transform: rotateY(0) rotateX(0deg) translate(-0%, -0%) skew(0deg, 0deg);
+  opacity: 1;
+
+  transition: transform 1000ms var(--cubick-link);
+  border: 2px solid #111111;
+  border-radius: 18px;
+
+  @media screen and (min-width: 480px) {
+    // width: 480px;
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    transform: rotateY(0) rotateX(0deg) translate(-50%, -50%) skew(0deg, 0deg);
+    opacity: 1;
+
+    width: 579px;
+    height: 501px;
+    top: 50%;
+    left: 50%;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+  }
+}
+.modal_light {
+  background-color: var(--color-bcg-theme-light);
+  border-color: var(--color-title-ligth);
+}
+.modal_dark {
+  background-color: var(--color-bcg-theme-dark);
+  border-color: var(--color-title-dark);
+}
+
+.modal__btn_close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background-color: transparent;
+  //outline: 2px solid red;
+}
+.modal__icon_close {
+  width: 18px;
+  height: 18px;
+  transition: fill var(--speed-link) var(--cubick-link);
+  .modal__btn_close:focus &,
+  .modal__btn_close:hover & {
+    filter: invert(22%) sepia(96%) saturate(7437%) hue-rotate(254deg)
+      brightness(93%) contrast(95%);
+  }
+}
+.modal__icon_close_dark {
+  filter: invert(100%);
+}
+
+.container_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.modal_img_book,
+.thumb_modal_img {
+  max-width: 100%;
+  width: 287px;
+  height: 408px;
+
+  @media screen and (min-width: 768px) {
+    width: 192px;
+    height: 281px;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+  }
+}
+.modal__icon_light {
+  filter: grayscale(1) invert(0);
+}
+.modal__icon_dark {
+  filter: grayscale(1) invert(1);
+}
+
+.modal_book_desc {
+  display: flex;
+  flex-direction: column;
+}
+.modal_title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  /* identical to box height, or 117% */
+
+  letter-spacing: -0.04em;
+  margin-bottom: 8px;
+}
+.modal_title_light {
+  color: var(--color-title-ligth);
+}
+.modal_subtitle {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+}
+.modal_subtitle_light {
+  color: var(--color-subtitle-ligth);
+}
+.modal_description {
+  // width: 100%;
+  height: 70px;
+
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  /* or 129% */
+
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    width: 279px;
+    height: 70px;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+  }
+}
+.modal_description_light {
+  color: var(--color-title-ligth);
+}
+.thumb_icons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn_modal {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  @media screen and (min-width: 480px) {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 279px;
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 499px;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.modal_text_remove {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  /* or 117% */
+
+  text-align: center;
+  letter-spacing: -0.04em;
+  margin-top: 8px;
+}

@@ -1,0 +1,22 @@
+:root {
+  --color-bcg-accent: rgb(79, 46, 232);
+
+  --color-bcg-theme-light: rgb(255, 255, 255);
+  --color-prime-bcg-light: rgb(208, 208, 208);
+  --color-text-light: rgba(17, 17, 17, 0.6);
+  --color-title-ligth: rgba(17, 17, 17, 1);
+  --color-subtitle-ligth: rgb(180, 175, 175);
+  --color-header-light: rgba(234, 198, 69, 1);
+  --color-secondary-text-light: rgba(17, 17, 17, 0.5);
+
+  --color-border-light: rgba(79, 46, 232, 0.4);
+
+  --color-bcg-theme-dark: rgba(32, 32, 36, 1);
+  --color-header-theme-dark: rgba(17, 17, 17, 1);
+  --color-text-theme-dark: rgba(255, 255, 255, 0.6);
+  --color-title-dark: rgb(255, 255, 255);
+  --color-secondary-text-dark: rgba(255, 255, 255, 0.5);
+
+  --speed-link: 250ms;
+  --cubick-link: cubic-bezier(0.4, 0, 0.2, 1);
+}

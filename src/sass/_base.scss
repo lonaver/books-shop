@@ -1,0 +1,129 @@
+body {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.02em;
+}
+.title_page {
+  display: flex;
+  margin-bottom: 40px;
+  font-size: 32px;
+  line-height: calc(38 / 32);
+  /* identical to box height, or 119% */
+
+  letter-spacing: -0.04em;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(52 / 48);
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: calc(52 / 48);
+    /* identical to box height, or 108% */
+    letter-spacing: -0.04em;
+  }
+}
+.title_page_light {
+  color: var(--color-title-ligth);
+}
+.title_page_dark {
+  color: var(--color-title-dark);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+
+  //align-items: flex-start;
+  border: 2px solid var(--color-bcg-accent);
+  border-radius: 40px;
+  background-color: transparent;
+  &:hover {
+    background-color: var(--color-bcg-accent);
+    color: var(--color-title-dark);
+  }
+}
+.btn_light {
+  color: var(--color-title-ligth);
+}
+.btn_dark {
+  color: var(--color-title-dark);
+}
+
+.side_left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    flex-direction: column;
+    gap: 86px;
+  }
+}
+
+.shop_side_left {
+  display: none;
+  @media screen and (min-width: 480px) {
+  }
+  // tablet screen
+  @media screen and (min-width: 768px) {
+  }
+  // desctop screen
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+}
+
+.color_accent_light {
+  color: var(--color-bcg-accent);
+}
+
+.light_theme {
+  background-color: var(--color-prime-bcg-light);
+  color: var(--color-subtitle-ligth);
+}
+.light_theme_text {
+  color: var(--color-bcg-theme-light);
+}
+.dark_theme {
+  background-color: var(--color-bcg-theme-dark);
+  color: var(--color-text-theme-dark);
+}
+.subtitle {
+  color: var(--color-subtitle-ligth);
+}
+
+.text_secondary_light {
+  color: var(--color-secondary-text-light);
+}
+.text_secondary_dark {
+  color: var(--color-secondary-text-dark);
+}
