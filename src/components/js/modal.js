@@ -54,7 +54,7 @@ const renderCardBook = ({
   book_image,
   buy_links,
 }) => {
-  newBookShopping = {
+  const newBookShopping = {
     id: _id,
     list_name: list_name,
     title: title,
