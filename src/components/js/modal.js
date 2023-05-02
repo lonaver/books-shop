@@ -54,15 +54,6 @@ const renderCardBook = ({
   book_image,
   buy_links,
 }) => {
-  const newBookShopping = {
-    id: _id,
-    list_name: list_name,
-    title: title,
-    author: author,
-    book_image: book_image,
-    buy_links: buy_links,
-  };
-
   let shoppingList = getShoppingList();
   listBookShopping.length = 0;
   listBookShopping = [...shoppingList];
@@ -122,6 +113,14 @@ const renderCardBook = ({
     btnRemove.style.display = 'flex';
     textRemove.style.display = 'flex';
   } else {
+    const newBookShopping = {
+      id: _id,
+      list_name: list_name,
+      title: title,
+      author: author,
+      book_image: book_image,
+      buy_links: buy_links,
+    };
     listBookShopping.push(newBookShopping);
     btnRemove.style.display = 'none';
     textRemove.style.display = 'none';
